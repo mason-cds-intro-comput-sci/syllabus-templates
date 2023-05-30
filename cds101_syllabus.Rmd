@@ -1,0 +1,269 @@
+---
+title: "CDS 101 Syllabus"
+subtitle: "Introduction to Computational and Data Sciences"
+geometry: margin=1.3in
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+instructor <- "Dr. Dominic White"
+instructor_title <- "an Assistant Professor"
+instructor_affiliation <- "in the Department of Computational and Data Sciences"
+instructor_office <- "Research Hall 242"
+instructor_email <- "dwhite34@gmu.edu"
+
+stars <- c("Samantha Lawrence")
+
+section_number <- "A01"
+semester <- "Summer"
+year <- lubridate::year(Sys.Date())
+
+is_asynchronous <- TRUE
+is_in_person <- FALSE
+classroom <- "Research Hall 239"
+meeting_times <- "Mondays and Wednesdays at 1:30pm"
+
+holidays <- c(
+  "Memorial Day (Mon. May 29)",
+  "Juneteenth (Mon. Jun 19)"
+)
+
+is_summer_session <- TRUE
+```
+
+
+# The One-Page Summary
+
+**What:** This course will teach you how to use computers to analyze data and run scientific experiments.
+
+* You will learn how to program in the R programming language.
+* You will learn how to analyze data to reach both intuitive insights and statistical results.
+* You will learn how to communicate scientific results in a clear and reproducible manner.
+
+**When and Where:** Section `r section_number` of CDS 101 `r if(is_in_person){paste("will meet", meeting_times, "in", classroom)}``r if(is_asynchronous){"is an asynchronous online section"}`. 
+
+**Who:** This section of CDS 101 is taught by `r instructor`, `r instructor_title` `r instructor_affiliation` (email: `r instructor_email`). Your section also has the following STARs (teaching assistants): `r paste(stars, sep=", ")`. Office hours are posted on Blackboard.
+
+**How:** The course is organized into modules. As part of each module:
+
+1. There are preparatory materials: videos, interactive tutorials, and readings. You must work through these before the start of the module.
+
+2. There will be a short Blackboard quiz on those preparatory materials.
+
+3. There will be a programming assignment where you implement the techniques from that module.
+
+`r if(!is_summer_session){paste("We will cover 1 module per week. The quiz will be due before the start of each week on Sunday evening. The assignment will be due at the end of the week on Friday evening.")}`
+
+In addition, there will be a Final Project at the end of the semester.
+
+There are three policies that are particularly important to remember:
+
+* *The "Hogwarts" Policy*: Help will always be given in CDS 101 to those who ask for it. If you are stuck, please reach out to your instructor and/or a STAR (TA), and we will guide you through the material.
+
+* *Academic Honesty*: Plagiarism, copying, cheating, sharing answers, etc. are strictly prohibited. You will be caught and reported to the University, which can result in failing the course or expulsion. Limited use of AI tools is permitted (see the AI tools section of the syllabus for more guidance).
+
+* *Communication*: All class-related communication should be through Slack (not email).
+
+# The Fine Print
+
+* Classroom: `r if(is_asynchronous){paste("None")}else{classroom}`.
+* Meeting times: `r if(is_asynchronous){paste("None")}else{meeting_times}`.
+* University holidays: `r paste(holidays, sep=", ")`.
+* Credit hours: 3.0 credit hours.
+* Prerequisites: None, but a background in algebra is assumed.
+* Mason Core: This course satisfies either the Mason Core Natural Science requirement, or Natural science + lab when taken with a CDS 102 lab section.
+
+## Course Description
+
+During this course, students will develop basic skills for loading, cleaning, transforming, and visualizing real-world datasets using the R programming language and the RStudio integrated development environment. Statistical methods for analyzing, interpreting, and predicting dataset trends are then introduced and approached from a computational point of view using randomization and simulation. An emphasis is placed on documenting one’s scientific work using the R Markdown format to fulfill the principles of reproducible research. Connections are highlighted between statistical inference and the scientific method and how this is related to both the scientific method’s power and its limitations. These tools will also be used to critically examine statistical claims reported in mass media, demonstrating how scientific literacy and a basic knowledge in statistics are indispensable tools to making sense of our modern world. Special topics like machine learning and dashboards may also be covered as time allows.
+
+## Objectives
+
+By the end of the course, students will be able to:
+
+* Obtain, clean, transform, and visualize a dataset using the R programming language.
+* Interpret, and predict dataset trends using statistical inference and models.
+* Document their work using R Markdown, a reproducible research format.
+* Manage files and source code using GitHub.
+
+## Course Materials
+
+### Textbooks
+
+This course utilizes two textbooks that are freely available online:
+
+* R for Data Science: Import, Tidy, Transform, Visualize, and Model Data by H. Wickham and G. Grolemund (O’Reilly Media, Sebastopol, CA, 2017). http://r4ds.had.co.nz/
+
+* Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by C. Ismay and A.Y. Kim (Chapman and Hall/CRC, 2019). https://moderndive.com
+
+### Software
+
+During the course we will use various software for writing code in the R programming language. This software is all free and installation instructions will be provided.
+
+### Platforms
+
+The course will be administered through the following online platforms:
+
+* GitHub: https://github.com
+* Slack: Link on Blackboard
+* Blackboard: https://mymasonportal.gmu.edu
+
+The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. Slack is the primary communication medium, replacing email (see the Contact policy below) while also serving as a discussion board. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. Blackboard is used for module exercises, part of the midterm exam, for submitting assignments, and returning grades.
+
+## Policies
+
+### Contact policy
+
+All correspondence is to be done using the private, invite-only Slack workspace for the course. Direct messages on Slack are to be used for contacting me instead of emails. My ground rules for direct messages are as follows:
+
+* I check and respond to messages periodically during normal university hours (i.e. weekdays 9am-5pm).
+* Allow up to 24 hours for a response during normal hours.
+* Questions about homework problems or troubleshooting a technical issue should be posted to the relevant Slack channels.
+* Questions about an assignment should be asked before the due date. Questions asked after 5:00pm on the due date will be answered the following morning.
+* Just because I view a message does not mean I will respond right away.
+* I generally don’t respond to messages over weekends and school holidays.
+* If your questions are involved enough, I will ask you to schedule an appointment with me.
+* Email policy: Emails sent during the first week of classes will be responded to, but I will respond to you using Slack. Emails sent to me after the first week will be ignored. (Obviously, if your issue is about not being able to access Slack, then you should send me an email!)
+
+### Tech support: R, RStudio, GitHub, and your computer
+
+Post all technical issues or error messages for R, RStudio, GitHub, and your computer in the designated Slack channel #rstudio-github-help. This is so that other students can either help out or see how to resolve what is likely a common problem. If it becomes clear that the error or issue is highly specific, then discussion can be moved to Direct Message or handled via a screen sharing session.
+
+When posting about an issue, here are some basic questions to answer that will help with troubleshooting:
+
+* What did you expect to happen when you ran your code?
+* What is actually happening when you run your code?
+* If there’s an error message, tell us what it is. A screenshot works, provided you a) don’t crop the image as that can remove useful information by accident, and b) take a real screenshot, not a photograph of your screen using your phone.
+* Is there any other context we should know? For example, if a file won’t load, did you check that you are in the correct project or that the file actually exists? Did your issue appear only after you worked on a different assignment? Did you recently install a package not used in class?
+
+### Illness and emergencies
+
+It is a student’s responsibility to inform me about illnesses or personal/family emergencies that will interfere with submitting work on time. This must be done as soon as possible. In case of illness, you may be asked to provide a doctor’s note before being granted an assignment extension or exemption.
+
+I understand that certain emotional or physical situations can impact a student’s willingness and ability to communicate what is going on and that it can take a few days to inform me about a personal emergency or severe illness. At the same time, all students are expected to exercise personal responsibility. It is not acceptable to wait to tell me about the impacts of a personal illness or emergency until you’re about to fail the course due to missing multiple submission deadlines. Exemptions may be granted at my discretion.
+
+### Accommodations policy
+
+Students with disabilities who need academic accommodations, please see me and contact the Office of Disability Services (ODS) at (703) 993-2474. All academic accommodations must be arranged through the ODS: http://ods.gmu.edu/.
+
+### Campus closures
+
+If the campus closes, or if a class meeting needs to be canceled or adjusted due to weather or other concern, students should check Blackboard and Slack for updates on how to continue learning and for information about any changes to events or assignments.
+
+### Grading
+
+100 points will be available to earn over the semester divided over the following activities:
+
+| Category | Weight |
+|:---------|:-------|
+| Quizzes: | 11%    |
+| Assignments: | 54% |
+| Final Project: | 35%
+
+Based on the final total score, your final grade will be determined as follows: A+ [98-100], A [94-97.99], A- [90-93.99], B+ [88-89.99], B [84-87.99], B- [80-83.99], C+ [78-79.99], C [74-76.99], C- [70-72.99], D [65-69.99], F [<65].
+
+Individual requests for extra credit or a grading curve will not be granted, no exceptions. Any opportunities to earn extra points will be offered to the entire class. Grading curves are handled on a per-assignment basis and are applied to all students equally.
+
+### Late work policy
+
+Unless otherwise noted, assignments are to be submitted by 11:59pm on the due date. The following penalties apply for most assignments (please note that weekends count as days):
+
+* First day late, by 11:59pm: -15%
+* Second day late, by 11:59pm: -30%
+* Third day late or later: no credit
+
+The above does not pertain to the quizzes, which must be completed by the designated date and time to receive credit. Late submissions for the Final Project will not be accepted.
+
+Students are responsible for informing me about any religious holidays, scheduled varsity sports trips, or other school-sponsored activities that will interfere with submitting an assignment on time. You must inform me before the day that the relevant assignment is due. Extensions are to be completed within the time-frame I set forth.
+
+### Regrading appeals policy
+
+Regrade appeals need to clearly state what you want regraded and justify the request by citing evidence. Appeals are only to be used for correct answers being marked as incorrect, misapplication of the grading rubric, or incorrectly tallied points. The number of points a question, exercise, or rubric category is worth or that were deducted for an incorrect answer or mistake cannot be appealed and are not up for debate or negotiation. 
+
+Regrade appeals must be sent in writing (preferably via Slack message).
+
+### Expectations
+
+*Interactive Tutorials and Readings:* Tutorials and readings are regularly scheduled during the semester and students are expected to complete these on their own. These activities are an important part of the course and are prerequisites for the assignments that we will work on in class. While there is not a grade category for the interactive tutorials and readings, students are responsible for understanding the content and students that skip them are under-prepared for the later parts of the course. The material in these activities will be assessed by the quizzes.
+
+*Quizzes:* Weekly quizzes for checking your understanding and to reinforce what you’ve learned will be a regular part of the course and collectively factor into the Quizzes grade category.
+
+*Assignments:* The assignments are to be completed using the R Markdown format introduced during the first week of the course.
+
+* Your R Markdown file must successfully knit to PDF in a clean RStudio environment to be eligible for full credit. 
+* Full sentences with proper grammar and punctuation are to be used throughout the submission.
+* You must explain what you are doing with each chunk of code and interpret the meaning of what you calculate so that a person that is not familiar with the problem could follow your logic.
+
+Grades for the individual assignments will be primarily based on the correctness of your answers to each question, as well as document formatting, visualization quality, writing quality, and code style. For example, do not engage in unorthodox practices such as writing sentences in a section header, placing code outside of code blocks, or submitting a PDF containing figures with unreadable overlapping labels, code blocks that run off the edge of the page, and is 50–100 pages in length because you keep printing out long tables. Also, unless specifically requested in the instructions, screenshots should never be included as part of your submission.
+
+General questions about the assignments should be posted in the Slack channel for that assignment. Questions including code should be sent in a Slack direct message to your instructor and one of the STARs assigned to your section.
+
+Take care to ensure that your submissions are in your own words and code. See the academic integrity section for specifics.
+
+*Final project:* Students will complete a Final Project where you will perform an exploratory data analysis and statistical analysis on a dataset. More detailed information about the project is to come later in the semester.
+
+## Conduct
+
+### Academic integrity
+
+> "Student members of the George Mason University community pledge not to cheat, plagiarize, steal, or lie in matters related to academic work."
+
+Students in this class are permitted to ask questions about the assignments on Slack and discuss assignments in private communications, however it is important to make sure that you write your assignments by yourself and in your own words, meaning that students are not permitted to collaborate on write-ups for assignments and projects. In the same vein, do not duplicate or paraphrase another person’s material or ideas and represent them as your own. "Individual assignment" is the default classification for all assignments, exams, and projects in the course; any exceptions to the rule will be noted in the instructions. Content that comes from a resource (including an AI tool) or another student should be properly cited.
+
+A note on sharing or reusing code found on other GitHub repos or on websites like Wikipedia or Stack Overflow. I am aware that there are solution sets, sample snippets of code, etc. that can be of use while working on your assignments, projects and exercises during the course. It’s common knowledge that researchers in both industry and academia will use search engines while writing code. Being able to search for existing solutions so that you don’t “reinvent the wheel” is a useful skill. Therefore, unless I specify otherwise, you are permitted to use these resources **as long as you provide a citation**.
+
+Exceptions to this rule are:
+
+* For individual assignments, you cannot reuse anything from another student’s work (past or present), including but not limited to R Markdown documents, code, plain text explanations, etc.
+
+* You are not permitted to consult or use solution sets for any of the assignments, activities, and projects for the course.
+
+* You are not permitted to ask other students from this or previous semesters for copies of their assignments or projects, even to use for reference.
+
+* ANY MATERIAL THAT IS TAKEN IN WHOLE OR IN PART FROM ANOTHER SOURCE AND NOT PROPERLY CITED WILL BE TREATED AS A VIOLATION OF MASON’S ACADEMIC HONOR CODE.
+
+Other violations of Mason’s Honor Code will be treated similarly. Suspected violations will be reported to the Office of Academic Integrity. The minimum sanctions I will recommend are:
+
+* Minor infraction (e.g. improper citation):
+  * First offense (university-wide): 0% on the assignment.
+  * Second offense: F for the course.
+  * Third offense: expulsion from the university.
+
+* Major infraction (e.g. cheating in an exam, or copying from another student’s assignment/project):
+  * First offense: F for the course.
+  * Second offense: expulsion from the university.
+  
+### AI policy (e.g. ChatGPT)
+
+ Recent developments in "AI" tools such as ChatGPT mean that it is possible to use programs to generate plausible looking code and interpretations to some of the assignments in this course. (Sometimes, these are even correct!)
+
+However, the goal of this course is for you to learn how to write computer code and understand the output of that code. The reason that this is important is because you cannot assess whether AI generated code is correct without understanding how to write the code without AI.
+
+__In this course, the work that you submit must be in your own words.__ I.e. it is not ok to get ChatGPT (or any other AI tool) to complete your assignment for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
+
+However, you are welcome to use AI tools to help you better understand parts of the course work, as long as you are not relying on it to complete the exercises. 
+
+> **AI tools should help you learn more, not replace your learning.**
+
+As a rule of thumb, no more than 25% of the code you write (or blanks that you fill in) should be coming from external sources such as websites or AI. In both cases, you should cite where you got this code from, so that you are not flagged for cheating.
+
+### Decorum/discourse
+
+Students are expected to be civil in their conduct and respectful of their fellow classmates and the instructor for the duration of the course on all discussion platforms. Students are expected to follow proper grammar and punctuation in their posted messages and to refrain from using internet slang, abbreviations, and sarcasm.
+
+I will address violations of classroom decorum on a case-by-case basis and reserve the right to enact grade-based penalties for disruptive or repeat violations. Penalties for decorum violations cannot be negotiated or appealed.
+
+### Mason diversity statement
+
+George Mason University promotes a living and learning environment for outstanding growth and productivity among its students, faculty and staff. An emphasis upon diversity and inclusion throughout the campus community is essential to achieve these goals. Diversity is broadly defined to include such characteristics as, but not limited to, race, ethnicity, gender, religion, age, disability, and sexual orientation. Diversity also entails different viewpoints, philosophies, and perspectives. Attention to these aspects of diversity will help promote a culture of inclusion and belonging, and an environment where diverse opinions, backgrounds and practices have the opportunity to be voiced, heard and respected.
+
+### Disclaimer
+
+The instructor reserves the right to modify this syllabus at any time during the course to improve the learning experience and classroom environment. The pacing of the course and the list of covered topics may also be adjusted in response to student progress.
+The course objectives reflect what a student is expected to understand by the end of the course after putting in the necessary time and effort both inside and outside the classroom and completing all assignments. These outcomes are not a guarantee, and students will get more out of the course the more they put into it. Any acquired skills and knowledge can fade over time if not reviewed or practiced after the course concludes.
+
+### Schedule
+
+A provisional calendar for the course modules will be made available on Blackboard. Timings of different modules may be changed subject to our progress throughout the semester.
+
+
