@@ -12,23 +12,24 @@ instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_office <- "Research Hall 242"
 instructor_email <- "dwhite34@gmu.edu"
 
-stars <- c("Samantha Lawrence")
+stars <- c("Eugenie Ahn")
 
-section_number <- "A01"
-semester <- "Summer"
+section_number <- "003"
+semester <- "Fall"
 year <- lubridate::year(Sys.Date())
 
-is_asynchronous <- TRUE
-is_in_person <- FALSE
-classroom <- "Research Hall 239"
+is_asynchronous <- FALSE
+is_in_person <- TRUE
+classroom <- "Innovation Hall 137"
 meeting_times <- "Mondays and Wednesdays at 1:30pm"
 
 holidays <- c(
-  "Memorial Day (Mon. May 29)",
-  "Juneteenth (Mon. Jun 19)"
+  "Labor Day (Mon. Sept 4)",
+  "Fall Break (Mon. Oct 9 - Monday classes will be held on Tues. Oct 10)",
+  "Thanksgiving Recess (Wed. Nov 22 - Sun. Nov 26)"
 )
 
-is_summer_session <- TRUE
+is_summer_session <- FALSE
 ```
 
 
@@ -229,23 +230,27 @@ Other violations of Mason’s Honor Code will be treated similarly. Suspected vi
   * Second offense: F for the course.
   * Third offense: expulsion from the university.
 
-* Major infraction (e.g. cheating in an exam, or copying from another student’s assignment/project):
+* Major infraction (e.g. cheating in an exam, or copying from another student’s assignment/project, or submitting an AI generated assignment):
   * First offense: F for the course.
   * Second offense: expulsion from the university.
   
 ### AI policy (e.g. ChatGPT)
 
- Recent developments in "AI" tools such as ChatGPT mean that it is possible to use programs to generate plausible looking code and interpretations to some of the assignments in this course. (Sometimes, these are even correct!)
+Recent developments in "AI" tools such as ChatGPT mean that it is possible to use such programs to guess plausible looking code and interpretations to some of the assignments in this course. (Sometimes, these may even be accidentally correct!)
 
 However, the goal of this course is for you to learn how to write computer code and understand the output of that code. The reason that this is important is because you cannot assess whether AI generated code is correct without understanding how to write the code without AI.
 
-__In this course, the work that you submit must be in your own words.__ I.e. it is not ok to get ChatGPT (or any other AI tool) to complete your assignment for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
+__In this course, the work that you submit must be in your own words.__ I.e. it is not ok to get ChatGPT (or any other AI tool) to complete your coursework for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
 
 However, you are welcome to use AI tools to help you better understand parts of the course work, as long as you are not relying on it to complete the exercises. 
 
 > **AI tools should help you learn more, not replace your learning.**
 
 As a rule of thumb, no more than 25% of the code you write (or blanks that you fill in) should be coming from external sources such as websites or AI. In both cases, you should cite where you got this code from, so that you are not flagged for cheating.
+
+Written answers should **not** be generated using AI.
+
+**Verbal examination:** If you use excessive amounts of AI generated code in a piece of coursework, then you may be required to meet with your instructor for a *viva* (a verbal examination) in which you will be required to explain how this code works. If you cannot explain what a piece of code is doing and why you included it then you will get a 0 for that exercise. If you cannot explain multiple pieces of code then you will be referred to the Office of Academic Integrity for an Honor Code violation (see previous section).
 
 ### Decorum/discourse
 
