@@ -9,27 +9,24 @@ output: pdf_document
 instructor <- "Dr. Dominic White"
 instructor_title <- "an Assistant Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences"
-instructor_office <- "Research Hall 242"
 instructor_email <- "dwhite34@gmu.edu"
 
-stars <- c("Eugenie Ahn")
+stars <- c("TBD") # List STARS names here.
 
-section_number <- "003"
+section_number <- "DL2"
 semester <- "Fall"
 year <- lubridate::year(Sys.Date())
-
-is_asynchronous <- FALSE
-is_in_person <- TRUE
-classroom <- "Innovation Hall 137"
-meeting_times <- "Mondays and Wednesdays at 1:30pm"
-
 holidays <- c(
-  "Labor Day (Mon. Sept 4)",
-  "Fall Break (Mon. Oct 9 - Monday classes will be held on Tues. Oct 10)",
-  "Thanksgiving Recess (Wed. Nov 22 - Sun. Nov 26)"
+  "Spring Recess (Mon. Mar 4 - Sun. Mar 10)"
 )
 
-is_summer_session <- FALSE
+is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
+is_summer_session <- FALSE # leave as FALSE if Fall or Spring
+
+is_in_person <- FALSE    # Set to TRUE if teaching an in-person section.
+# The next two settings will be ignored if is_in_person is set to FALSE
+classroom <- "Innovation Hall 129"
+meeting_times <- "Tuesdays and Thursdays at 3pm"
 ```
 
 
@@ -65,6 +62,7 @@ There are three policies that are particularly important to remember:
 
 * *Communication*: All class-related communication should be through Slack (not email).
 
+\newpage
 # The Fine Print
 
 * Classroom: `r if(is_asynchronous){paste("None")}else{classroom}`.
@@ -157,9 +155,9 @@ If the campus closes, or if a class meeting needs to be canceled or adjusted due
 
 | Category | Weight |
 |:---------|:-------|
-| Quizzes: | 11%    |
-| Assignments: | 54% |
-| Final Project: | 35%
+| Quizzes: | 10%    |
+| Assignments: | 55% |
+| Final Project: | 35% |
 
 Based on the final total score, your final grade will be determined as follows: A+ [98-100], A [94-97.99], A- [90-93.99], B+ [88-89.99], B [84-87.99], B- [80-83.99], C+ [78-79.99], C [74-76.99], C- [70-72.99], D [65-69.99], F [<65].
 
@@ -175,7 +173,11 @@ Unless otherwise noted, assignments are to be submitted by 11:59pm on the due da
 
 The above does not pertain to the quizzes, which must be completed by the designated date and time to receive credit. Late submissions for the Final Project will not be accepted.
 
-Students are responsible for informing me about any religious holidays, scheduled varsity sports trips, or other school-sponsored activities that will interfere with submitting an assignment on time. You must inform me before the day that the relevant assignment is due. Extensions are to be completed within the time-frame I set forth.
+Please ask for an extension if you need it - reasonable extension requests are usually granted. However, extensions need to be requested more than 24 hours *before* the due date in writing (preferably via Slack). Extensions are to be completed within the time-frame I set forth.
+
+Students are responsible for informing me *in advance* about any religious holidays, scheduled varsity sports trips, or other school-sponsored activities that will interfere with submitting an assignment on time. 
+
+
 
 ### Regrading appeals policy
 
@@ -247,6 +249,8 @@ However, you are welcome to use AI tools to help you better understand parts of 
 > **AI tools should help you learn more, not replace your learning.**
 
 As a rule of thumb, no more than 25% of the code you write (or blanks that you fill in) should be coming from external sources such as websites or AI. In both cases, you should cite where you got this code from, so that you are not flagged for cheating.
+
+If you use an AI tool, you need to submit your interaction with it as a supplementary tool along with the assignment.
 
 Written answers should **not** be generated using AI.
 
