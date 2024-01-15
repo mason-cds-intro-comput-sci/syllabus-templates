@@ -12,6 +12,8 @@ instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_email <- "dwhite34@gmu.edu"
 
 stars <- c("TBD") # List STARS names here.
+# EXAMPLE:
+# stars <- c("Joe Bloggs")
 
 section_number <- "DL2"
 semester <- "Fall"
@@ -173,11 +175,9 @@ Unless otherwise noted, assignments are to be submitted by 11:59pm on the due da
 
 The above does not pertain to the quizzes, which must be completed by the designated date and time to receive credit. Late submissions for the Final Project will not be accepted.
 
-Please ask for an extension if you need it - reasonable extension requests are usually granted. However, extensions need to be requested more than 24 hours *before* the due date in writing (preferably via Slack). Extensions are to be completed within the time-frame I set forth.
+Please ask for an extension if you need it - reasonable extension requests are usually granted. However, extensions need to be requested more than 24 hours *before the due date* **in writing** (preferably via Slack). Extensions are to be completed within the time-frame I set forth.
 
 Students are responsible for informing me *in advance* about any religious holidays, scheduled varsity sports trips, or other school-sponsored activities that will interfere with submitting an assignment on time. 
-
-
 
 ### Regrading appeals policy
 
@@ -213,7 +213,7 @@ Take care to ensure that your submissions are in your own words and code. See th
 
 Students in this class are permitted to ask questions about the assignments on Slack and discuss assignments in private communications, however it is important to make sure that you write your assignments by yourself and in your own words, meaning that students are not permitted to collaborate on write-ups for assignments and projects. In the same vein, do not duplicate or paraphrase another person’s material or ideas and represent them as your own. "Individual assignment" is the default classification for all assignments, exams, and projects in the course; any exceptions to the rule will be noted in the instructions. Content that comes from a resource (including an AI tool) or another student should be properly cited.
 
-A note on sharing or reusing code found on other GitHub repos or on websites like Wikipedia or Stack Overflow. I am aware that there are solution sets, sample snippets of code, etc. that can be of use while working on your assignments, projects and exercises during the course. It’s common knowledge that researchers in both industry and academia will use search engines while writing code. Being able to search for existing solutions so that you don’t “reinvent the wheel” is a useful skill. Therefore, unless I specify otherwise, you are permitted to use these resources **as long as you provide a citation**.
+A note on sharing or reusing code found on other GitHub repos or on websites like Wikipedia or Stack Overflow. I am aware that there are solution sets, sample snippets of code, etc. that can be of use while working on your assignments, projects and exercises during the course. It’s common knowledge that researchers in both industry and academia will use search engines while writing code. Being able to search for existing solutions so that you don't "reinvent the wheel" is a useful skill. Therefore, unless I specify otherwise, you are permitted to use these resources **as long as you provide a citation**.
 
 Exceptions to this rule are:
 
@@ -250,7 +250,7 @@ However, you are welcome to use AI tools to help you better understand parts of 
 
 As a rule of thumb, no more than 25% of the code you write (or blanks that you fill in) should be coming from external sources such as websites or AI. In both cases, you should cite where you got this code from, so that you are not flagged for cheating.
 
-If you use an AI tool, you need to submit your interaction with it as a supplementary tool along with the assignment.
+If you use an AI tool, you need to submit your interaction with it as a supplementary submission along with the assignment.
 
 Written answers should **not** be generated using AI.
 
