@@ -11,26 +11,20 @@ instructor_title <- "an Assistant Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences" # will be inserted in the "Who" section of the first page
 instructor_email <- "dwhite34@gmu.edu"
 
-
-
-stars <- c("TBD") # List STARS names here.
-# EXAMPLE:
-# stars <- c("Joe Bloggs")
-
-section_number <- "DL2"
+section_number <- "001"
 semester <- "Fall"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Spring Recess (Mon. Mar 4 - Sun. Mar 10)"
+  "Labor Day (Mon. Sept 2), Fall Break (Mon. Oct 14), Thanksgiving Recess (Wed. Nov 27 - Sun. Dec 1)"
 )
 
-is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
+is_asynchronous <- FALSE  # TRUE if online, FALSE if in-person.
 is_summer_session <- FALSE # leave as FALSE if Fall or Spring
 
-is_in_person <- FALSE    # Set to TRUE if teaching an in-person section.
+is_in_person <- TRUE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
 # The next two settings will be ignored if is_in_person is set to FALSE
-classroom <- "Innovation Hall 129"
-meeting_times <- "Tuesdays and Thursdays at 3pm"
+classroom <- "Innovation Hall 326"
+meeting_times <- "Mondays and Wednesdays at 1:30pm"
 ```
 
 
@@ -229,7 +223,7 @@ Other violations of Mason’s Honor Code will be treated similarly. Suspected vi
 
 However, the goal of this course is for you to learn how to write computer code and understand the output of that code. The reason that this is important is because you cannot assess whether AI generated code is correct without understanding how to write the code without AI.
 
-__In this course, the work that you submit must be in your own words.__ I.e. it is not ok to get ChatGPT (or any other AI tool) to complete your assignment for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
+__In this course, the work that you submit must be in your own words.__ I.e. it is not acceptable to use ChatGPT (or any other AI tool) to generate your coursework for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
 
 However, you are welcome to use AI tools to help you better understand parts of the course work, as long as you are not relying on it to complete the exercises. 
 
@@ -252,6 +246,10 @@ I will address violations of classroom decorum on a case-by-case basis and reser
 ### Mason diversity statement
 
 George Mason University promotes a living and learning environment for outstanding growth and productivity among its students, faculty and staff. An emphasis upon diversity and inclusion throughout the campus community is essential to achieve these goals. Diversity is broadly defined to include such characteristics as, but not limited to, race, ethnicity, gender, religion, age, disability, and sexual orientation. Diversity also entails different viewpoints, philosophies, and perspectives. Attention to these aspects of diversity will help promote a culture of inclusion and belonging, and an environment where diverse opinions, backgrounds and practices have the opportunity to be voiced, heard and respected.
+
+### Mason Common Course Policies
+
+All George Mason University courses adhere to a common set of policies around academic standards, accommodations for students with disabilities, FERPA and the use of GMU email addresses, and Title IX resources and required reporting. You can read these policies at: https://stearnscenter.gmu.edu/home/gmu-common-course-policies/
 
 ### Disclaimer
 

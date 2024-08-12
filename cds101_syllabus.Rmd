@@ -1,5 +1,4 @@
 ---
-title: "CDS 101 Syllabus"
 subtitle: "Introduction to Computational and Data Sciences"
 geometry: margin=1.3in
 output: pdf_document
@@ -11,26 +10,29 @@ instructor_title <- "an Assistant Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_email <- "dwhite34@gmu.edu"
 
-stars <- c("TBD") # List STARS names here.
+stars <- c("Samantha Lawrence") # List STARS names here.
 # EXAMPLE:
 # stars <- c("Joe Bloggs")
 
-section_number <- "DL2"
+section_number <- "001"
 semester <- "Fall"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Spring Recess (Mon. Mar 4 - Sun. Mar 10)"
+  "Labor Day (Mon. Sept 2), Fall Break (Mon. Oct 14), Thanksgiving Recess (Wed. Nov 27 - Sun. Dec 1)"
 )
 
-is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
+is_asynchronous <- FALSE  # TRUE if online, FALSE if in-person.
 is_summer_session <- FALSE # leave as FALSE if Fall or Spring
 
-is_in_person <- FALSE    # Set to TRUE if teaching an in-person section.
+is_in_person <- TRUE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
 # The next two settings will be ignored if is_in_person is set to FALSE
-classroom <- "Innovation Hall 129"
-meeting_times <- "Tuesdays and Thursdays at 3pm"
+classroom <- "Innovation Hall 326"
+meeting_times <- "Mondays and Wednesdays at 1:30pm"
 ```
 
+---
+title: "`r 'CDS 101 Syllabus'` (`r semester` `r year`, Section `r section_number`)"
+---
 
 # The One-Page Summary
 
@@ -54,7 +56,7 @@ meeting_times <- "Tuesdays and Thursdays at 3pm"
 
 `r if(!is_summer_session){paste("We will cover 1 module per week. The quiz will be due before the start of each week on Sunday evening. The assignment will be due at the end of the week on Friday evening.")}`
 
-In addition, there will be a Final Project at the end of the semester.
+In addition, there will be a Final Project at the end of the course.
 
 There are three policies that are particularly important to remember:
 
@@ -63,6 +65,7 @@ There are three policies that are particularly important to remember:
 * *Academic Honesty*: Plagiarism, copying, cheating, sharing answers, etc. are strictly prohibited. You will be caught and reported to the University, which can result in failing the course or expulsion. Limited use of AI tools is permitted (see the AI tools section of the syllabus for more guidance).
 
 * *Communication*: All class-related communication should be through Slack (not email).
+
 
 \newpage
 # The Fine Print
@@ -93,13 +96,15 @@ By the end of the course, students will be able to:
 
 This course utilizes two textbooks that are freely available online:
 
-* R for Data Science: Import, Tidy, Transform, Visualize, and Model Data by H. Wickham and G. Grolemund (O’Reilly Media, Sebastopol, CA, 2017). http://r4ds.had.co.nz/
+* A dedicated course textbook available online at: https://cdsbook.github.io/book/
 
-* Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by C. Ismay and A.Y. Kim (Chapman and Hall/CRC, 2019). https://moderndive.com
+* Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by C. Ismay and A.Y. Kim (Chapman and Hall/CRC, 2019). Available online at https://moderndive.com
 
-### Software
+### Software & Tech Requirements
 
-During the course we will use various software for writing code in the R programming language. This software is all free and installation instructions will be provided.
+You will either need to install software (called RStudio) on your own laptop (free), or use a cloud-based version (free up to 25 hours/month, and $5/month for students.thereafter). 
+
+Installation and set-up instructions will be provided via the course materials.
 
 ### Platforms
 
@@ -163,7 +168,7 @@ If the campus closes, or if a class meeting needs to be canceled or adjusted due
 
 Based on the final total score, your final grade will be determined as follows: A+ [98-100], A [94-97.99], A- [90-93.99], B+ [88-89.99], B [84-87.99], B- [80-83.99], C+ [78-79.99], C [74-76.99], C- [70-72.99], D [65-69.99], F [<65].
 
-Individual requests for extra credit or a grading curve will not be granted, no exceptions. Any opportunities to earn extra points will be offered to the entire class. Grading curves are handled on a per-assignment basis and are applied to all students equally.
+Individual requests for extra credit or a grading curve will not be granted, no exceptions. Any opportunities to earn extra points will be offered to the entire class. Exceptions to grading policies are handled on a per-assignment basis and are applied to all students equally.
 
 ### Late work policy
 
@@ -181,7 +186,7 @@ Students are responsible for informing me *in advance* about any religious holid
 
 ### Regrading appeals policy
 
-Regrade appeals need to clearly state what you want regraded and justify the request by citing evidence. Appeals are only to be used for correct answers being marked as incorrect, misapplication of the grading rubric, or incorrectly tallied points. The number of points a question, exercise, or rubric category is worth or that were deducted for an incorrect answer or mistake cannot be appealed and are not up for debate or negotiation. 
+Regrade appeals need to clearly state what you want regraded and justify the request by citing evidence. Appeals are only to be used for correct answers being marked as incorrect, misapplication of the grading rubric, or incorrectly tallied points. The number of points a question, exercise, or rubric category is worth or that were deducted for an incorrect answer or mistake cannot be appealed and are not up for debate or negotiation.
 
 Regrade appeals must be sent in writing (preferably via Slack message).
 
@@ -242,7 +247,7 @@ Recent developments in "AI" tools such as ChatGPT mean that it is possible to us
 
 However, the goal of this course is for you to learn how to write computer code and understand the output of that code. The reason that this is important is because you cannot assess whether AI generated code is correct without understanding how to write the code without AI.
 
-__In this course, the work that you submit must be in your own words.__ I.e. it is not ok to get ChatGPT (or any other AI tool) to complete your coursework for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
+__In this course, the work that you submit must be in your own words.__ I.e. it is not acceptable to use ChatGPT (or any other AI tool) to generate your coursework for you. Submitting answers that you have obtained from ChatGPT is like to asking another person to complete your assignment for you, and will be treated as a case of cheating and referred to the Office of Academic Integrity as an Honor Code violation (resulting in an automatic F for the entire course).
 
 However, you are welcome to use AI tools to help you better understand parts of the course work, as long as you are not relying on it to complete the exercises. 
 
@@ -265,6 +270,10 @@ I will address violations of classroom decorum on a case-by-case basis and reser
 ### Mason diversity statement
 
 George Mason University promotes a living and learning environment for outstanding growth and productivity among its students, faculty and staff. An emphasis upon diversity and inclusion throughout the campus community is essential to achieve these goals. Diversity is broadly defined to include such characteristics as, but not limited to, race, ethnicity, gender, religion, age, disability, and sexual orientation. Diversity also entails different viewpoints, philosophies, and perspectives. Attention to these aspects of diversity will help promote a culture of inclusion and belonging, and an environment where diverse opinions, backgrounds and practices have the opportunity to be voiced, heard and respected.
+
+### Mason Common Course Policies
+
+All George Mason University courses adhere to a common set of policies around academic standards, accommodations for students with disabilities, FERPA and the use of GMU email addresses, and Title IX resources and required reporting. You can read these policies at: https://stearnscenter.gmu.edu/home/gmu-common-course-policies/
 
 ### Disclaimer
 
