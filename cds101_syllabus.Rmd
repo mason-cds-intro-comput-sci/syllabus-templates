@@ -10,7 +10,7 @@ instructor_title <- "an Assistant Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_email <- "dwhite34@gmu.edu"
 
-stars <- c("Samantha Lawrence") # List STARS names here.
+stars <- c("TBD") # List STARS names here.
 # EXAMPLE:
 # stars <- c("Joe Bloggs")
 
@@ -129,7 +129,7 @@ All correspondence is to be done using the private, invite-only Slack workspace 
 * Just because I view a message does not mean I will respond right away.
 * I generally don’t respond to messages over weekends and school holidays.
 * If your questions are involved enough, I will ask you to schedule an appointment with me.
-* Email policy: Emails sent during the first week of classes will be responded to, but I will respond to you using Slack. Emails sent to me after the first week will be ignored. (Obviously, if your issue is about not being able to access Slack, then you should send me an email!)
+* Email policy: Emails sent during the first week of classes will be responded to, but I will respond to you using Slack. Emails sent to me after the first week will be responded to in Slack. (Obviously, if your issue is about not being able to access Slack, then you should send me an email!)
 
 ### Tech support: R, RStudio, GitHub, and your computer
 
