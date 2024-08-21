@@ -102,7 +102,7 @@ All correspondence is to be done using the private, invite-only Slack workspace 
 * I check and respond to messages periodically during normal university hours (i.e. weekdays 9am-5pm).
 * Allow up to 24 hours for a response during normal hours.
 * Questions about homework problems or troubleshooting a technical issue should be posted to the relevant Slack channels.
-* Questions about an assignment should be asked before the due date. Questions asked after 5:00pm on the due date will be answered the following morning.
+* Questions about an assignment should be asked before the due date. Questions asked after 5:00pm on the due date will be answered on the morning of the following business day.
 * Just because I view a message does not mean I will respond right away.
 * I generally don’t respond to messages over weekends and school holidays.
 * If your questions are involved enough, I will ask you to schedule an appointment with me.
