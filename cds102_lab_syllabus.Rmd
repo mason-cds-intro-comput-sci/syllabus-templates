@@ -15,7 +15,7 @@ section_number <- "001"
 semester <- "Fall"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Labor Day (Mon. Sept 2), Fall Break (Mon. Oct 14), Thanksgiving Recess (Wed. Nov 27 - Sun. Dec 1)"
+  "Labor Day (Mon. Sept 2), Fall Break (Mon. Oct 14), Election Day (Tue. Nov 5), Thanksgiving Recess (Wed. Nov 27 - Sun. Dec 1)"
 )
 
 is_asynchronous <- FALSE  # TRUE if online, FALSE if in-person.
