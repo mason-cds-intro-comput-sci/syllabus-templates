@@ -75,9 +75,9 @@ By the end of the course, students will be able to:
 
 This course utilizes two textbooks that are freely available online:
 
-* R for Data Science: Import, Tidy, Transform, Visualize, and Model Data by H. Wickham and G. Grolemund (O’Reilly Media, Sebastopol, CA, 2017). http://r4ds.had.co.nz/
+* A dedicated course textbook available online at: https://cdsbook.github.io/book/
 
-* Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by C. Ismay and A.Y. Kim (Chapman and Hall/CRC, 2019). https://moderndive.com
+* Statistical Inference via Data Science: A ModernDive into R and the Tidyverse by C. Ismay and A.Y. Kim (Chapman and Hall/CRC, 2019). Available online at https://moderndive.com
 
 ### Software
 
