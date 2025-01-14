@@ -10,21 +10,23 @@ instructor_title <- "an Assistant Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_email <- "dwhite34@gmu.edu"
 
-stars <- c("TBD") # List STARS names here.
+LMS <- "Canvas" # change to Blackboard if relevant
+
+stars <- c("Bharathi Balamurugan") # List STARS names here.
 # EXAMPLE:
 # stars <- c("Joe Bloggs")
 
-section_number <- "001"
-semester <- "Fall"
+section_number <- "DL1"
+semester <- "Spring"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Labor Day (Mon. Sept 2), Fall Break (Mon. Oct 14), Election Day (Tue. Nov 5), Thanksgiving Recess (Wed. Nov 27 - Sun. Dec 1)"
+  "Spring Recess (Mon. Mar 10 - Sun. Mar 16)"
 )
 
-is_asynchronous <- FALSE  # TRUE if online, FALSE if in-person.
+is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
 is_summer_session <- FALSE # leave as FALSE if Fall or Spring
 
-is_in_person <- TRUE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
+is_in_person <- FALSE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
 # The next two settings will be ignored if is_in_person is set to FALSE
 classroom <- "Innovation Hall 326"
 meeting_times <- "Mondays and Wednesdays at 1:30pm"
@@ -44,13 +46,13 @@ title: "`r 'CDS 101 Syllabus'` (`r semester` `r year`, Section `r section_number
 
 **When and Where:** Section `r section_number` of CDS 101 `r if(is_in_person){paste("will meet", meeting_times, "in", classroom)}``r if(is_asynchronous){"is an asynchronous online section"}`. 
 
-**Who:** This section of CDS 101 is taught by `r instructor`, `r instructor_title` `r instructor_affiliation` (email: `r instructor_email`). Your section also has the following STARs (teaching assistants): `r paste(stars, sep=", ")`. Office hours are posted on Blackboard.
+**Who:** This section of CDS 101 is taught by `r instructor`, `r instructor_title` `r instructor_affiliation` (email: `r instructor_email`). Your section also has the following STARs (teaching assistants): `r paste(stars, sep=", ")`. Office hours are posted on `r LMS`.
 
 **How:** The course is organized into modules. As part of each module:
 
 1. There are preparatory materials: videos, interactive tutorials, and readings. You must work through these before the start of the module.
 
-2. There will be a short Blackboard quiz on those preparatory materials.
+2. There will be a short `r LMS` quiz on those preparatory materials.
 
 3. There will be a programming assignment where you implement the techniques from that module.
 
@@ -111,10 +113,10 @@ Installation and set-up instructions will be provided via the course materials.
 The course will be administered through the following online platforms:
 
 * GitHub: https://github.com
-* Slack: Link on Blackboard
-* Blackboard: https://mymasonportal.gmu.edu
+* Slack: You will receive an email invite after submitting a FERPA waiver
+* `r LMS`: `r if(LMS=="Canvas"){"https://canvas.gmu.edu"} else{"https://mymasonportal.gmu.edu"}`
 
-The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. Slack is the primary communication medium, replacing email (see the Contact policy below) while also serving as a discussion board. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. Blackboard is used for module exercises, part of the midterm exam, for submitting assignments, and returning grades.
+The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. Slack is the primary communication medium, replacing email (see the Contact policy below) while also serving as a discussion board. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. `r LMS` is used for module exercises, for submitting assignments, and returning grades.
 
 ## Policies
 
@@ -154,7 +156,7 @@ Students with disabilities who need academic accommodations, please see me and c
 
 ### Campus closures
 
-If the campus closes, or if a class meeting needs to be canceled or adjusted due to weather or other concern, students should check Blackboard and Slack for updates on how to continue learning and for information about any changes to events or assignments.
+If the campus closes, or if a class meeting needs to be canceled or adjusted due to weather or other concern, students should check `r LMS` and Slack for updates on how to continue learning and for information about any changes to events or assignments.
 
 ### Grading
 
@@ -282,6 +284,6 @@ The course objectives reflect what a student is expected to understand by the en
 
 ### Schedule
 
-A provisional calendar for the course modules will be made available on Blackboard. Timings of different modules may be changed subject to our progress throughout the semester.
+A provisional calendar for the course modules will be made available on `r LMS`. Timings of different modules may be changed subject to our progress throughout the semester.
 
 
