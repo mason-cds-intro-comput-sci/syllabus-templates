@@ -232,16 +232,7 @@ Exceptions to this rule are:
 
 * ANY MATERIAL THAT IS TAKEN IN WHOLE OR IN PART FROM ANOTHER SOURCE AND NOT PROPERLY CITED WILL BE TREATED AS A VIOLATION OF MASON’S ACADEMIC HONOR CODE.
 
-Other violations of Mason’s Honor Code will be treated similarly. Suspected violations will be reported to the Office of Academic Integrity. The minimum sanctions I will recommend are:
-
-* Minor infraction (e.g. improper citation):
-  * First offense (university-wide): 0% on the assignment.
-  * Second offense: F for the course.
-  * Third offense: expulsion from the university.
-
-* Major infraction (e.g. cheating in an exam, or copying from another student’s assignment/project, or submitting an AI generated assignment):
-  * First offense: F for the course.
-  * Second offense: expulsion from the university.
+Other violations of Mason’s Honor Code will be treated similarly. Suspected violations will be reported to the Academic Standards.
   
 ### AI policy (e.g. ChatGPT)
 
