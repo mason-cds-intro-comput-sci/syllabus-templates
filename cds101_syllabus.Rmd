@@ -6,21 +6,24 @@ output: pdf_document
 
 ```{r setup, include=FALSE}
 instructor <- "Dr. Dominic White"
-instructor_title <- "an Assistant Professor"
+instructor_title <- "an Associate Professor"
 instructor_affiliation <- "in the Department of Computational and Data Sciences"
 instructor_email <- "dwhite34@gmu.edu"
 
-LMS <- "Canvas" # change to Blackboard if relevant
+LMS <- "Canvas"
 
-stars <- c("Bharathi Balamurugan") # List STARS names here.
+stars <- c("Bharathi Balamurugan") # List STARS names for this section here.
 # EXAMPLE:
 # stars <- c("Joe Bloggs")
 
 section_number <- "DL1"
-semester <- "Spring"
+semester <- "Fall"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Spring Recess (Mon. Mar 10 - Sun. Mar 16)"
+  "Labor Day (Mon Sep 01)",
+  "Fall Break (Mon Oct 13)",
+  "Election Day (Tue Nov 04)",
+  "Thanksgiving (Wed Nov 26 - Fri Nov 28)"
 )
 
 is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
