@@ -17,13 +17,10 @@ stars <- c("Bharathi Balamurugan") # List STARS names here.
 # stars <- c("Joe Bloggs")
 
 section_number <- "DL1"
-semester <- "Fall"
+semester <- "Spring"
 year <- lubridate::year(Sys.Date())
 holidays <- c(
-  "Labor Day (Mon Sep 01)",
-  "Fall Break (Mon Oct 13)",
-  "Election Day (Tue Nov 04)",
-  "Thanksgiving (Wed Nov 26 - Fri Nov 28)"
+  "Spring Recess (Mon. Mar 9 - Sun. Mar 15)"
 )
 
 is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
@@ -56,7 +53,7 @@ There are three policies that are particularly important to remember:
 
 * *Academic Honesty*: Plagiarism, copying, cheating, sharing answers, etc. are strictly prohibited. You will be caught and reported to the University, which can result in failing the course or expulsion. Limited use of AI tools is permitted (see the AI tools section of the syllabus for more guidance).
 
-* *Communication*: All class-related communication should be through Slack (not email).
+* *Communication*: Please use the appropriate method of communication to reach us. See the communication policies here for how. Email should be a last resort!
 
 \newpage
 # The Fine Print
@@ -100,36 +97,66 @@ During the course we will use various software for writing code in the R program
 The course will be administered through the following online platforms:
 
 * GitHub: https://github.com
-* Slack: You will receive an email invite after submitting a FERPA waiver
 * `r LMS`: `r if(LMS=="Canvas"){"https://canvas.gmu.edu"} else{"https://mymasonportal.gmu.edu"}`
 
 The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. Slack is the primary communication medium, replacing email (see the Contact policy below) while also serving as a discussion board. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. `r LMS` is used for module exercises, part of the midterm exam, for submitting assignments, and returning grades.
 
 ## Policies
 
-### Contact policy
+### How To Reach Us
 
-All correspondence is to be done using the private, invite-only Slack workspace for the course. Direct messages on Slack are to be used for contacting me instead of emails. My ground rules for direct messages are as follows:
+1. **Office hours:** Office hour times are posted on Canvas. Both your instructor and STAR will hold office hours. The times for these are posted on Canvas.
+
+   You will also find the times for other CDS 101 office hours for the instructors and STARS from other sections. You may attend any of these office hours - all sections cover the same material, so any of us can help you.
+
+
+2. **Q&A discussion on Canvas:** This is the preferred place to ask course-related questions outside of office hours. If you have a question or comment about the materials or coursework, please post it in the Q&A discussion board in Canvas. There is a single Q&A board for all coursework.
+
+   Examples of what the Canvas Q&A board is appropriate for:
+   
+   * Clarifications about the lecture videos.
+   * Typos/mistakes in the course materials.
+   * Questions about the programming assignments.
+   * Troubleshooting errors with your code.
+   
+   The Q&A board is public, so do not use it for personal information such as extension requests. Instead...
+
+3. **Incident reports:** Use the *Incident Report* assignment on Canvas to submit requests for:
+
+   * Extensions.
+   * Grade reviews.
+   
+   Note that requests for extensions should be made before the due date - see the Grading Policies section below.
+
+4. **Email:** Use email for anything that doesn't fit the categories above, e.g. sending an Academic Accommodation Letter to your instructor, or some other type of communication containing information that should not be posted publicly in the Canvas Q&A. 
+
+   Emails must use Mason email addresses (i.e. ending in gmu.edu). Do not use a personal email address.
+
+
+### General Communication Policies
 
 * I check and respond to messages periodically during normal university hours (i.e. weekdays 9am-5pm).
-* Allow up to 24 hours for a response during normal hours.
-* Questions about homework problems or troubleshooting a technical issue should be posted to the relevant Slack channels.
+* Allow up to 48 hours for a response during normal hours.
 * Questions about an assignment should be asked before the due date. Questions asked after 5:00pm on the due date will be answered on the morning of the following business day.
 * Just because I view a message does not mean I will respond right away.
 * I generally don’t respond to messages over weekends and school holidays.
-* If your questions are involved enough, I will ask you to schedule an appointment with me.
-* Email policy: Emails sent during the first week of classes will be responded to, but I will respond to you using Slack. Emails sent to me after the first week will be responded to in Slack. (Obviously, if your issue is about not being able to access Slack, then you should send me an email!)
+* If your questions are involved enough, I will ask you to attend office hours or schedule an appointment with me.
+* Email response policy: If you email me about an issue that would be better asked via the Canvas Q&A or Incident Report, then I will ask you to resubmit it in one of those locations.
 
-### Tech support: R, RStudio, GitHub, and your computer
 
-Post all technical issues or error messages for R, RStudio, GitHub, and your computer in the designated Slack channel #rstudio-github-help. This is so that other students can either help out or see how to resolve what is likely a common problem. If it becomes clear that the error or issue is highly specific, then discussion can be moved to Direct Message or handled via a screen sharing session.
+### Effective Communication
 
-When posting about an issue, here are some basic questions to answer that will help with troubleshooting:
+Communicating back and forth via text-based messages can be slow, since each person has to wait for the other to see and respond to every message.
 
+The best way to make these messages more efficient is to reduce the number of times we have to go back and forth. The best way to do this is to provide as much information as possible up-front.
+
+For example, if you are asking for help with an error in a programming assignment, don't just say "I'm getting a weird error on Exercise 3. Can anyone help?" 
+
+Instead share more information so that we can help you without needing to request (and wait for) more information. For example:
 * What did you expect to happen when you ran your code?
 * What is actually happening when you run your code?
 * If there’s an error message, tell us what it is. A screenshot works, provided you a) don’t crop the image as that can remove useful information by accident, and b) take a real screenshot, not a photograph of your screen using your phone.
-* Is there any other context we should know? For example, if a file won’t load, did you check that you are in the correct project or that the file actually exists? Did your issue appear only after you worked on a different assignment? Did you recently install a package not used in class?
+* Is there any other context we should know? For example, if a file won’t load, did you check that you are in the correct project or that the file actually exists? Did your issue appear only after you worked on a different assignment? Did you recently update R, or RStudio, or your computer's OS?
 
 ### Illness and emergencies
 
@@ -167,7 +194,7 @@ Unless otherwise noted, assignments are to be submitted by 11:59pm on the due da
 * Second day late, by 11:59pm: -30%
 * Third day late or later: no credit
 
-Please ask for an extension if you need it - reasonable extension requests are usually granted. However, extensions need to be requested more than 24 hours *before the due date* **in writing** (preferably via Slack). Extensions are to be completed within the time-frame I set forth.
+Please ask for an extension if you need it - reasonable extension requests are usually granted. However, extensions need to be requested *before 7pm on the due date* **via a written Incident Report on Canvas**.. Extensions are to be completed within the time-frame I set forth.
 
 Students are responsible for informing me *in advance* about any religious holidays, scheduled varsity sports trips, or other school-sponsored activities that will interfere with submitting an assignment on time. 
 
