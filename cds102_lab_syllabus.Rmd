@@ -99,7 +99,7 @@ The course will be administered through the following online platforms:
 * GitHub: https://github.com
 * `r LMS`: `r if(LMS=="Canvas"){"https://canvas.gmu.edu"} else{"https://mymasonportal.gmu.edu"}`
 
-The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. Slack is the primary communication medium, replacing email (see the Contact policy below) while also serving as a discussion board. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. `r LMS` is used for module exercises, part of the midterm exam, for submitting assignments, and returning grades.
+The course website operates as the central repository for course materials, copies of the lecture slides and handouts, homework instructions, and links to the lecture videos hosted on YouTube. GitHub is used for connecting your class files to RStudio, tracking changes, distributing starter files for homework assignments and certain module exercises, and for project collaborations. `r LMS` is used for communication, module exercises, part of the midterm exam, for submitting assignments, and returning grades.
 
 ## Policies
 
@@ -153,6 +153,7 @@ The best way to make these messages more efficient is to reduce the number of ti
 For example, if you are asking for help with an error in a programming assignment, don't just say "I'm getting a weird error on Exercise 3. Can anyone help?" 
 
 Instead share more information so that we can help you without needing to request (and wait for) more information. For example:
+
 * What did you expect to happen when you ran your code?
 * What is actually happening when you run your code?
 * If there’s an error message, tell us what it is. A screenshot works, provided you a) don’t crop the image as that can remove useful information by accident, and b) take a real screenshot, not a photograph of your screen using your phone.
@@ -170,7 +171,7 @@ Students with disabilities who need academic accommodations, please see me and c
 
 ### Campus closures
 
-If the campus closes, or if a class meeting needs to be canceled or adjusted due to weather or other concern, students should check `r LMS` and Slack for updates on how to continue learning and for information about any changes to events or assignments.
+If the campus closes, or if a class meeting needs to be canceled or adjusted due to weather or other concern, students should check `r LMS` for updates on how to continue learning and for information about any changes to events or assignments.
 
 ### Grading
 
@@ -204,7 +205,7 @@ Students are responsible for informing me *in advance* about any religious holid
 
 Regrade appeals need to clearly state what you want regraded and justify the request by citing evidence. Appeals are only to be used for correct answers being marked as incorrect, misapplication of the grading rubric, or incorrectly tallied points. The number of points a question, exercise, or rubric category is worth or that were deducted for an incorrect answer or mistake cannot be appealed and are not up for debate or negotiation. 
 
-Regrade appeals must be sent in writing (preferably via Slack message).
+Regrade appeals must be sent in writing via an Incident Report.
 
 ### Expectations
 
@@ -231,7 +232,7 @@ If you are in an in-person lab section, you may need to finish writing up the la
 
 > "Student members of the George Mason University community pledge not to cheat, plagiarize, steal, or lie in matters related to academic work."
 
-Students in this class are permitted to ask questions about the assignments on Slack and discuss assignments in private communications, however it is important to make sure that you write your assignments by yourself and in your own words, meaning that students are not permitted to collaborate on write-ups for assignments and projects. In the same vein, do not duplicate or paraphrase another person’s material or ideas and represent them as your own. "Individual assignment" is the default classification for all assignments, exams, and projects in the course; any exceptions to the rule will be noted in the instructions. Content that comes from a resource (including an AI tool) or another student should be properly cited.
+Students in this class are permitted to ask questions about the assignments on Canvas and discuss assignments in private communications, however it is important to make sure that you write your assignments by yourself and in your own words, meaning that students are not permitted to collaborate on write-ups for assignments and projects. In the same vein, do not duplicate or paraphrase another person’s material or ideas and represent them as your own. "Individual assignment" is the default classification for all assignments, exams, and projects in the course; any exceptions to the rule will be noted in the instructions. Content that comes from a resource (including an AI tool) or another student should be properly cited.
 
 A note on sharing or reusing code found on other GitHub repos or on websites like Wikipedia or Stack Overflow. I am aware that there are solution sets, sample snippets of code, etc. that can be of use while working on your assignments, projects and exercises during the course. It’s common knowledge that researchers in both industry and academia will use search engines while writing code. Being able to search for existing solutions so that you don't "reinvent the wheel" is a useful skill. Therefore, unless I specify otherwise, you are permitted to use these resources **as long as you provide a citation**.
 

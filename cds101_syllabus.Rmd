@@ -26,7 +26,7 @@ holidays <- c(
 is_asynchronous <- TRUE  # TRUE if online, FALSE if in-person.
 is_summer_session <- FALSE # leave as FALSE if Fall or Spring
 
-is_in_person <- FALSE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
+is_in_person <- TRUE    # Set to TRUE if teaching an in-person section, or FALSE if section is online
 # The next two settings will be ignored if is_in_person is set to FALSE
 classroom <- "Innovation Hall 326"
 meeting_times <- "Mondays and Wednesdays at 1:30pm"
@@ -170,6 +170,7 @@ The best way to make these messages more efficient is to reduce the number of ti
 For example, if you are asking for help with an error in a programming assignment, don't just say "I'm getting a weird error on Exercise 3. Can anyone help?" 
 
 Instead share more information so that we can help you without needing to request (and wait for) more information. For example:
+
 * What did you expect to happen when you ran your code?
 * What is actually happening when you run your code?
 * If there’s an error message, tell us what it is. A screenshot works, provided you a) don’t crop the image as that can remove useful information by accident, and b) take a real screenshot, not a photograph of your screen using your phone.
